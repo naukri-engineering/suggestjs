@@ -35,9 +35,9 @@ This Autocomplete component provides suggestions while you type into the input f
 -------------------------------------------------------
 
 # Getting Started
-* Include the [Style Sheet](https://github.com/saeed3e/suggestor/blob/master/c/suggestor.css) for suggestor design.
-* Include the suggestor [javascript library](https://github.com/saeed3e/suggestor/blob/master/j/).
-* Add required HTML
+* Include the [Style Sheet](https://raw.githubusercontent.com/naukri-engineering/suggestjs/gh-pages/c/suggest.css) for suggestor design.
+* Include the suggestor [javascript library](https://raw.githubusercontent.com/naukri-engineering/suggestjs/gh-pages/j/suggest_v1.0.0.min.js).
+* Add required HTML [HTML](https://gist.github.com/naukri-engineering/4fdff41ab34e1996cf6b).
 
 -------------------------------------------------------
 
