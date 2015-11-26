@@ -1,5 +1,5 @@
 /*jslint eqeq:true, boss:true*/
-/*Start of Suggestor.js (newJquerySugg_1.0.0)*/
+/*Start of Suggestor.js (v1.0.0)*/
 (function($) {
     var openDrops = {};
     var sugId;
@@ -1117,3 +1117,4 @@
         return obj;
     };
 })(window.jQuery || window.Zepto);
+
