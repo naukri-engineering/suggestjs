@@ -1,5 +1,5 @@
 /*jslint eqeq:true, boss:true*/
-/*Start of Suggestor.js (newJquerySugg_7.6.0)*/
+/*Start of Suggestor.js (newJquerySugg_1.0.0)*/
 (function($) {
     var openDrops = {};
     var sugId;
@@ -1117,76 +1117,3 @@
         return obj;
     };
 })(window.jQuery || window.Zepto);
-
-// formating, parameter rename, and optimize code
-
-// v6.3.0: add sourceId in tracking object
-
-/* v6.4.0: for whitelistingSpecialCharacter paramater : whitelisting only from query URL 
- *         add missing getRelatedConcepts parameter
- */
-
-/**
- * v6.5.0:
- * Enhancement: Enhance versioning control system: if multiple suggestor call trigger from the same page then
-                versioning check goes only for first call.
- * Bug Fix: if user type only special character
-             in suggestor and that's special character not specify in "whiteListSpecialChar" param,
-             then a blanck query goes to server
- */
-
-/*
- * v6.5.1: 
- * Bug fix : handle showrelated concept on/off by pressing comma also
- *         : Also handle tab case 
- */
-
-/**
- * v7.0.0 : Enhancements --> 
- * a) Add support of RC(related concept) data in prefetch library, previous version only support AC("auto complete")
- *    data in prefech library.
- * b) Add support of bucketing/grouping in Related concept data.
- * c) Now prefetch data library will be update/replace based on TTL(Time to live) from local storage
- */
-
-
-/**
- * v7.0.1 :  showrelatedconcept param fix,
- * fix : after comma startSearchAfter support
- */
-
-
-/**v7.1.0 : enhancement
- * add parameter returnFocus : this is for to disable focus on input field after selection.
- * add width 100% support 
- */
-
-
-/**
- * v7.1.1 :  Temporary fix for recent Searches label:
- * Optimie solution is in v7.2.0 
- */
-
-
-
-/**
- * v7.2.0 : add Central Tracking feature
- * v7.2.0 : To show relatedConcepts if comma is present after keyword
- */
-
-
-
-/**
- *  v7.3.0 : add onShow/onHide function,
- *           fix issue in "show relatedConcepts if comma is present after keyword"
- *
- */
-
-
-// 7.4.0 : update opening and closing issue on mobile
-
-
-/**
- * v7.6.0 :  Enhance central tracking systeam , also add feature to track data even user not selected from suggestor suggestions. 
- *
- */
