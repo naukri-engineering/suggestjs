@@ -1,0 +1,434 @@
+.dlogo {
+    height: 40px;
+    width: 40px;
+}
+
+* {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+}
+
+body,
+html {
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    color: #47a3da;
+    font-family: 'Lato', Calibri, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.sidebarNav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 25px;
+    width: 250px;
+}
+
+.sidebarNav li {
+    padding: 10px 20px 10px 20px;
+}
+
+.sidebarNav li a {
+    color: #999999;
+    display: block;
+    text-decoration: none;
+}
+
+.sidebarNav li:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+.sidebarNav li:hover a {
+    color: #fff;
+}
+
+.sidebarNav li:active,
+.sidebarNav li:focus {
+    text-decoration: none;
+}
+
+.sidebarNav > .sidebar-brand {
+    font-size: 18px;
+}
+
+.sidebarNav > .sidebar-brand a {
+    color: #fff;
+}
+
+.sidebarNav > .sidebar-brand:hover {
+    background: none;
+}
+
+.header {
+    background: #009688;
+    left: 0;
+    moz-transition: height 0.3s;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    transition: height 0.3s;
+    webkit-transition: height 0.3s;
+    width: 100%;
+    z-index: 10000;
+}
+
+.header .inner {
+    margin: 0 auto;
+    padding: 0 1em;
+}
+
+.header h1,
+.header nav {
+    display: inline-block;
+    position: relative;
+}
+
+.header h1,
+.header nav a {
+    line-height: 100px;
+}
+
+.header h1 {
+    color: #fff;
+    float: left;
+    font-size: 2em;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+.header nav {
+    float: right;
+}
+
+.header nav a {
+    color: #E4E4E4;
+    font-size: 1.4em;
+    font-weight: 700;
+    margin: 0 0 0 20px;
+}
+
+.header nav a:hover,
+.header nav a.active {
+    color: #FFFFBB;
+}
+
+.header h1,
+.header nav a {
+    moz-transition: all 0.3s;
+    transition: all 0.3s;
+    webkit-transition: all 0.3s;
+}
+
+.header.header-shrink {
+    height: 90px;
+}
+
+.header.header-shrink h1,
+.header.header-shrink nav a {
+    line-height: 90px;
+}
+
+.header.header-shrink h1 {
+    font-size: 2em;
+}
+
+.container {
+    margin-top: 6em;
+    position: relative;
+}
+
+.container > header,
+.main section > div {
+    margin: 0 auto;
+    max-width: 69em;
+    padding: 2.875em 1.875em 1.875em;
+    text-align: center;
+    width: 90%;
+}
+
+.bp-icon:after {
+    color: #47a3da;
+    font-family: 'bpicons';
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-align: center;
+    text-transform: none;
+    webkit-font-smoothing: antialiased;
+}
+
+.main > section:nth-child(even) {
+    background: #87cef8;
+    color: #fff;
+}
+
+.main section:first-child > div {
+    padding-top: 0em;
+}
+
+.main section p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    margin: 0;
+    padding: 1em 0;
+}
+
+#wrapper {
+    moz-transition: all 0.5s ease;
+    o-transition: all 0.5s ease;
+    padding-left: 0;
+    transition: all 0.5s ease;
+    webkit-transition: all 0.5s ease;
+}
+
+#wrapper.toggled {
+    padding-left: 250px;
+}
+
+#sidebar-wrapper {
+    background: #001D18;
+    height: 100%;
+    left: 250px;
+    margin-left: -250px;
+    moz-transition: all 0.5s ease;
+    o-transition: all 0.5s ease;
+    overflow-y: auto;
+    position: fixed;
+    transition: all 0.5s ease;
+    webkit-transition: all 0.5s ease;
+    width: 0;
+    z-index: 1000;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    width: 250px;
+}
+
+#page-content-wrapper {
+    padding: 15px 15px 15px 30px;
+    position: absolute;
+    width: 100%;
+}
+
+#wrapper.toggled #page-content-wrapper {
+    margin-right: -250px;
+    position: absolute;
+}
+
+.navIcon {
+    background: url('../i/top-tray3.png') no-repeat;
+    background-position: -288px -7px;
+    border: 0;
+    display: inline-block;
+    height: 15px;
+    left: 5px;
+    position: absolute;
+    width: 18px;
+}
+
+.txtCntr {
+    text-align: center;
+}
+
+.col-lg-11 {
+    box-shadow: 0px 0px 8px #DDD9D9;
+    display: none;
+    float: none;
+    margin: 0 auto;
+    margin-top: 30px;
+    min-height: 500px;
+    padding: 2em;
+}
+
+.clr {
+    clear: both;
+    height: 1px;
+}
+
+.w50prc {
+    display: inline-block;
+    vertical-align: middle;
+    width: 48%;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.ofHd {
+    overflow: hidden;
+}
+
+ul {
+    padding: 0;
+}
+
+footer {
+    color: #333;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.inner h1 {
+    font-family: 'Allura', cursive;
+    font-size: 3em;
+}
+
+.inner h1 span {
+    color: yellow;
+    font-weight: bold;
+}
+
+.codeContainer {
+    color: #333;
+}
+
+@media(min-width:768px) {
+    #wrapper {
+        padding-left: 250px;
+    }
+    #wrapper.toggled {
+        padding-left: 0;
+    }
+    #sidebar-wrapper {
+        width: 250px;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        width: 0;
+    }
+    #page-content-wrapper {
+        padding: 20px;
+        position: relative;
+    }
+    #wrapper.toggled #page-content-wrapper {
+        margin-right: 0;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 75em) {
+    .header .inner {
+        width: 100%;
+    }
+    .header h1,
+    .header nav {
+        display: block;
+        float: none;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .header h1 {font-size: 2.5em;line-height: 50px;}
+    
+    .header nav a {
+        font-size: 1.4em;
+        line-height: 50px;
+    }
+    .header nav a {
+        margin: 0 10px;
+    }
+    .header.header-shrink h1,
+    .header.header-shrink nav a {
+        line-height: 45px;
+    }
+    .header.header-shrink h1 {
+        font-size: 2em;
+    }
+    .header.header-shrink nav a {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width: 55em) {
+    .container > header h1,
+    .container > header nav {
+        float: none;
+    }
+    .container > header > span,
+    .container > header h1 {
+        text-align: center;
+    }
+    .container > header nav {
+        margin: 0 auto;
+    }
+    .container > header > span {
+        text-indent: 30px;
+    }
+    .main section p {
+        font-size: 1.4em;
+        padding: 2em 5%;
+    }
+    .dlogo {
+        height: 25px;
+        width: 25px;
+    }
+    .header .inner {
+        padding: 0;
+    }
+    .col-lg-11 {
+        padding: 2em;
+    }
+}
+
+@media screen and (max-width: 32.25em) {
+
+    .header h1 {
+        font-size: 2.5em;
+    }
+    .header nav a {
+        font-size: 1.2em;
+        margin: 0 5px;
+    }
+    .dlogo {
+        height: 20px;
+        width: 20px;
+    }
+}
+
+@media screen and (max-width: 27em) {
+    .header nav a,
+    .header.header-shrink nav a {
+        line-height: 1;
+    }
+    .header h1 {
+        font-size: 2em;
+    }
+    .header nav a {
+        font-size: .9em;
+    }
+    .dlogo {
+        height: 22px;
+        width: 22px;
+    }
+}

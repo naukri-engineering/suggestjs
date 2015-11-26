@@ -1,0 +1,45 @@
+/*********************************Start of Suggestor css */
+.suggest .sSearch, .suggest .sCross, .suggest .Sarw { background: url(../i/arw.png) no-repeat; }
+.suggest ul{margin: 0}
+.suggest { background-color: #fff; max-width: 300px /* .sAct .Sbtn{color:#fff} */ /*For mobiel site right side arrow*/ }
+.suggest .sugInp { padding: 6px 0; border: 0; outline: none; width: 100%; margin: 0; }
+.suggest .inpWrap { padding: 0 35px 0 8px; }
+.suggest .Sdrop { position: relative; text-align: left; width: 100%; }
+.suggest .Sdrop li { overflow: hidden; padding: 0; margin: 0; position: relative; }
+.suggest .Sdrop .sAct { background-color: #ECECEC; color: #0099cc; }
+.suggest .Sdrop .category { padding: 5px; color: #cccccc; }
+.suggest .Sdrop img { position: absolute; top: 2px; left: 6px; width: 40px; height: 40px; }
+.suggest .Sdrop img + button { padding: 0 0 0 55px; }
+.suggest .Sdrop .relHead { background-color: #7c7cfc; padding: 3px 6px; color: #fff; font-size: 14px; }
+.suggest .Sbtn { height: 25px; display: block; word-wrap: break-word; padding: 0 0 0 15px; text-decoration: none; line-height: 25px; color: #000; background: none; text-align: left; border: 0; width: 100%; cursor: pointer; }
+.suggest .suggest { border: 0; width: 100%; outline: none; padding: 10px 0; margin: 0; }
+.suggest .suggestor { width: 100%; background-color: white; }
+.suggest .sCross { height: 35px; float: right; color: #C4C4C4; text-align: center; background-position: 8px -37px; display: none; width: 30px; }
+.suggest .sCross:hover { background-position: 8px -61px; cursor: pointer; }
+.suggest .sSearch { background-color: #3079ED; width: 35px; height: 35px; background-position: 11px -12px; border: 0; float: right; cursor: pointer; }
+.suggest .sSearch:hover { background-color: #1e67db; }
+.suggest .sugGrey { color: gray; }
+.suggest .sAct .sugGrey { color: white; }
+.suggest .iconWrap { position: absolute; right: 0; }
+.suggest .sWrap { border: 1px solid #ccc; position: relative; width: 100%; }
+.suggest .sugCont {
+	 max-height: 0;
+	 overflow-y: hidden;
+	 visibility: hidden;
+	 transition: max-height 1s ease;
+
+ position: absolute; background-color: #fff;  z-index: 9; border: solid #c5c5c5; border-width: 0 1px 1px 1px; }
+.suggest .liHover .Sbtn { border-left: 5px solid #fff; padding: 0; }
+.suggest .liHover .sAct { border-left: 5px solid blue; background: none; color: black; }
+.suggest .nLoder { background: url(../i/anim_loading_16x16.gif); width: 16px; height: 16px; float: right; margin: 10px 3px 0 5px; display: none; }
+.suggest .Sarw { background-position: 8px 9px; height: 25px; width: 25px; position: absolute; right: 0; top: 0; }
+.suggest .Sarw + Sbtn { position: relative; }
+.suggest .wrapTable { padding-right: 30px; }
+.suggest .wrapTable button { width: 100%; }
+
+.suggest .slideDown {
+    max-height: 100%;
+    visibility: visible;
+} 
+
+/* End of Suggestor css */

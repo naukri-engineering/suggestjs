@@ -1,0 +1,190 @@
+//colors
+$white: #fff;
+$color_cararra_approx: #ececec;
+$color_pacific_blue_approx: #0099cc;
+$color_celeste_approx: #cccccc;
+$color_chetwode_blue_approx: #7c7cfc;
+$black: #000;
+$color_cloud_approx: #c4c4c4;
+$color_royal_blue_approx: #3079ed;
+$color_mariner_approx: #1e67db;
+$gray: gray;
+$color_pumice_approx: #c5c5c5;
+$blue:  blue;
+
+//urls
+$url_0: url(../i/arw.png);
+$url_1: url(../i/anim_loading_16x16.gif);
+
+.suggest {
+    background-color: $white;
+    width: 300px;
+    .sSearch {
+        background: $url_0 no-repeat;
+        background-color: $color_royal_blue_approx;
+        width: 35px;
+        height: 35px;
+        background-position: 11px -12px;
+        border: 0;
+        float: right;
+        cursor: pointer;
+        &:hover {
+            background-color: $color_mariner_approx;
+        }
+    }
+    .sCross {
+        background: $url_0 no-repeat;
+        height: 35px;
+        float: right;
+        color: $color_cloud_approx;
+        text-align: center;
+        background-position: 8px -37px;
+        display: none;
+        width: 30px;
+        &:hover {
+            background-position: 8px -61px;
+            cursor: pointer;
+        }
+    }
+    .Sarw {
+        background: $url_0 no-repeat;
+        background-position: 8px 9px;
+        height: 25px;
+        width: 25px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        + Sbtn {
+            position: relative;
+        }
+    }
+    ul {
+        margin: 0;
+    }
+    .sugInp {
+        padding: 6px 0;
+        border: 0;
+        outline: none;
+        width: 100%;
+        margin: 0;
+    }
+    .inpWrap {
+        padding: 0 35px 0 8px;
+    }
+    .Sdrop {
+        position: relative;
+        text-align: left;
+        width: 100%;
+        li {
+            overflow: hidden;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+        .sAct {
+            background-color: $color_cararra_approx;
+            color: $color_pacific_blue_approx;
+        }
+        .category {
+            padding: 5px;
+            color: $color_celeste_approx;
+        }
+        img {
+            position: absolute;
+            top: 2px;
+            left: 6px;
+            width: 40px;
+            height: 40px;
+            + button {
+                padding: 0 0 0 55px;
+            }
+        }
+        .relHead {
+            background-color: $color_chetwode_blue_approx;
+            padding: 3px 6px;
+            color: $white;
+            font-size: 14px;
+        }
+    }
+    .Sbtn {
+        height: 25px;
+        display: block;
+        word-wrap: break-word;
+        padding: 0 0 0 15px;
+        text-decoration: none;
+        line-height: 25px;
+        color: $black;
+        background: none;
+        text-align: left;
+        border: 0;
+        width: 100%;
+        cursor: pointer;
+    }
+    .suggest {
+        border: 0;
+        width: 100%;
+        outline: none;
+        padding: 10px 0;
+        margin: 0;
+    }
+    .suggestor {
+        width: 100%;
+        background-color: $white;
+    }
+    .sugGrey {
+        color: $gray;
+    }
+    .iconWrap {
+        position: absolute;
+        right: 0;
+    }
+    .sWrap {
+        border: 1px solid $color_celeste_approx;
+        position: relative;
+        width: 100%;
+    }
+    .sugCont {
+        max-height: 0;
+        overflow-y: hidden;
+        visibility: hidden;
+        //Instead of the line below you could use @include transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+        transition: max-height 1s ease;
+        position: absolute;
+        background-color: $white;
+        z-index: 9;
+        border: solid $color_pumice_approx;
+        border-width: 0 1px 1px 1px;
+    }
+    .liHover {
+        .Sbtn {
+            border-left: 5px solid $white;
+            padding: 0;
+        }
+        .sAct {
+            border-left: 5px solid $blue;
+            background: none;
+            color: $black;
+        }
+    }
+    .nLoder {
+        background: $url_1;
+        width: 16px;
+        height: 16px;
+        float: right;
+        margin: 10px 3px 0 5px;
+        display: none;
+    }
+    .wrapTable {
+        padding-right: 30px;
+        button {
+            width: 100%;
+        }
+    }
+    .slideDown {
+        max-height: 100%;
+        visibility: visible;
+    }
+    .sAct .sugGrey {
+        color: $white;
+    }
+}

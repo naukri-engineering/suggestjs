@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggest.js</title>
+    <meta name="keywords" content="">
+    <!-- Latest compiled and minified CSS -->
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="c/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="c/default.css">
+    <link rel="stylesheet" type="text/css" href="c/suggest.css">
+</head>
+
+<body cz-shortcut-listen="true">
+    <div class="container">
+        <div class="header">
+            <div class="inner">
+                <h1><img style="display:none" class="dlogo"/>Suggest.<span style="color:yellow;font-weight: bold;">JS</span></h1>
+                <nav>
+                    <a class="active" href="#">Demo</a>
+                    <a href="http://gitlab.infoedge.com/naukri-ui-dev/suggestor/tree/master#README">Documentation</a>
+                    <a href="https://docs.google.com/presentation/d/183YTUpmmBvj1HOWDVHcRwuAb5bmMZTWhqvliLgBxC4c/edit?usp=sharing">Presentation</a>
+                    <a href="https://github.com/naukri-engineering">Plugins</a>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- <div style="clear:both;height:1px;"></div> -->
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebarNav">
+                <li class="sidebar-brand">
+                    <a href="#">Default Demo</a>
+                </li>
+                <li>
+                    <a href="#">Auto Complete</a>
+                </li>
+                <li>
+                    <a href="#">Releted Concepts</a>
+                </li>
+                <li>
+                    <a href="#">Trigger Related Concepts by suggested arrow</a>
+                </li>
+                <li>
+                    <a href="#">Show user history / suggested data on focus</a>
+                </li>
+                <li>
+                    <a href="#">Track User Interaction and send data to server</a>
+                </li>
+                <li>
+                    <a href="#">Multiple Datasets</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <a href="#menu-toggle" class="navIcon" id="menu-toggle"></a>
+                <h3>All demos only work with <b>Indian locations (States, Cities)</b>. e.g. Delhi, Chandigarh, Lucknow</h3>
+                <div class="row">
+                    <div class="codeContainer">
+                        <div class="col-lg-11" style="display:block">
+                            <h3>Basic demo</h3>
+                            <div class="suggest fl" id="Section-1-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <ul>
+                                <li>To see suggestions, Type: <b>Delhi, Agra</b> or <b>Chandigarh</b></li>
+                                <li>Suggest.js suggest suggestions based on what type in search box</li>
+                                <li>By default caching is enabled so firstly data lookup check from local cache, if not present then data fetch from server</li>
+                            </ul>
+                            <div style="clear:both; height:30px"></div>
+                            <p>Plugin Call/ How to initialize suggestor?</p>
+                            <script src="https://gist.github.com/saeed3e/07e365604661abc466ba.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Auto Complete / Auto Suggest</h3>
+                            <div class="suggest fl" id="Section-2-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <script src="https://gist.github.com/saeed3e/197b744c2d66322f7b22.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Related Concepts</h3>
+                            <div class="suggest fl" id="Section-3-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <script src="https://gist.github.com/saeed3e/5290d263c9e14ab9b629.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Trigger Related Concepts by suggested arrow</h3>
+                            <div class="suggest fl" id="Section-4-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <script src="https://gist.github.com/saeed3e/9bee1dca58c7c11e372f.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Show user history/suggested data on focus</h3>
+                            <div class="suggest fl" id="Section-5-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <script src="https://gist.github.com/saeed3e/426d89155873c2663a77.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Track User Interaction and send data to server</h3>
+                            <div class="suggest fl" id="Section-6-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <div id="userInteraction_data">
+                                <pre>
+    <code>Track data: select something from suggestor</code>
+</pre>
+                            </div>
+                            <script src="https://gist.github.com/saeed3e/def7017f4db69865dbcf.js"></script>
+                            <p>Tracking data format/Sample</p>
+                            <script src="https://gist.github.com/saeed3e/f497f612fbbadb6d4258.js"></script>
+                        </div>
+                        <div class="col-lg-11">
+                            <h3>Multiple Datasets or show datasets in groups</h3>
+                            <div class="suggest fl" id="Section-7-suggestor">
+                                <div class="sWrap">
+                                    <div class="iconWrap">
+                                        <a class="sSearch"></a>
+                                        <a class="sCross"></a><span class="nLoder"></span>
+                                    </div>
+                                    <div class="inpWrap">
+                                        <input class="sugInp" type="text" placeholder="Type here ...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="clear:both; height:30px"></div>
+                            <script src="https://gist.github.com/saeed3e/71548d9d40c58e0fc021.js"></script>
+                        </div>
+                        <footer>Info Edge (India) Ltd. © 2015</footer>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <script src="j/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="j/bootstrap.min.js"></script>
+    <script type="text/javascript" src="j/ncCache_v1.js"></script>
+    <script type="text/javascript" src="j/jsonpErrorSupport_v1.js"></script>
+    <script type="text/javascript" src="j/suggest_v1.1.0.js"></script>
+    <script type="text/javascript" src="j/data.js"></script>
+    <script type="text/javascript" src="j/call.js"></script>
+
+</html>
