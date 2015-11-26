@@ -44,7 +44,7 @@ This Autocomplete component provides suggestions while you type into the input f
 ## Features
 * Autocomplete: Displays suggestions to end-users as they type
 
- ![picture](http://saeed3e.github.io/suggestjs/i/autoComplete.PNG)
+ ![picture](http://naukri-engineering.github.io/suggestjs/i/autoComplete.PNG)
  
 * Highlights query matches within the suggestion
 
@@ -57,13 +57,13 @@ This Autocomplete component provides suggestions while you type into the input f
 
 * Intelligent caching(URL based cashing support)
 * Autocorrect feature (suggest autocorrect suggestions if user type wrong/mispell word)
-    ![picture](http://saeed3e.github.io/suggestjs/i/autoCorrect.PNG)
+    ![picture](http://naukri-engineering.github.io/suggestjs/i/autoCorrect.PNG)
 
 * Related concept (show related suggestions when user press commma or select any record)
- ![picture](http://saeed3e.github.io/suggestjs/i/relatedConcept.PNG)
+ ![picture](http://naukri-engineering.github.io/suggestjs/i/relatedConcept.PNG)
 
 * Show User's History for quick selection
- ![picture](http://saeed3e.github.io/suggestjs/i/recenthistory.png)
+ ![picture](http://naukri-engineering.github.io/suggestjs/i/recenthistory.png)
 
 * UserBased data personalization support by userID and history keywords
 
@@ -143,7 +143,7 @@ Where:
 -------------------------------------------------------
 
 ## Data Flow Diagram
-![picture](http://saeed3e.github.io/suggestjs/i/technicalArchitecture.PNG)
+![picture](http://naukri-engineering.github.io/suggestjs/i/technicalArchitecture.PNG)
 
 
 # Usage
