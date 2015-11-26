@@ -8,7 +8,7 @@ This Autocomplete component provides suggestions while you type into the input f
 -------------------------------------------------------
 
 ## Demo
-[Click me --:](http://saeed3e.github.io/suggestjs)
+[Click me --:](http://naukri-engineering.github.io/suggestjs/)
 
 -------------------------------------------------------
 
