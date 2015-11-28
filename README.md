@@ -173,6 +173,43 @@ $('.suggest').suggestor({
 });
 ```
 
+### Data Format
+
+```javascript
+{
+    "resultList": {				
+        "top": [{
+            "id": 0,
+            "displayTextEn": "Javascript"
+        }, {
+            "id": 1,
+            "displayTextEn": "Java Servlets"
+        }, {
+            "id": 2,
+            "displayTextEn": "Java SE"
+        }],
+        "location": [{
+            "id": '101',
+            "displayTextEn": "Delhi"
+        }, {
+            "id":'102',
+            "displayTextEn": "Mumbai"
+        }]
+    }
+}
+
+
+Where:
+
+// resultList/resultConcepts:   The value of this  key can be "resultList" or "resultConcepts",  Where:
+                                //	resultList: refer autocomplete/suggestion list 
+                                // resultConcepts: refer autoconcepts/related Concepts/Related keywords list
+// top/location: This key type of cateogry/buckets/group. It can be any string value
+// id: Id of text and can be a type of number or string
+// displayTextEn: Suggestion text
+
+```
+
 
 ### Parameters (Options)
 
