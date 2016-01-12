@@ -219,7 +219,7 @@ Name  | Description
 appId | Corresponds to the application which use auto-suggestor.
 autoComplete | URL which return autocomplete data as per query.
 checkVersion |  URL which return the current version of the autoSuggestor library. 
-category | skill, title, location, company, institute (all are case sensitive and can be used as per project requirement). Note: At least one field is mandatory and it can be any one.
+category | top, skill, title, location, company, institute (all are case sensitive and can be used as per project requirement). Note: At least one field is mandatory and it can be any one.
 getRelatedConcepts | It's a callback function to get RC list.
 grouping (Default: true)| Enable/Disable data to show in a group/buckets or not.
 multiSearch (Default: false)|  if set true then the user can search multiple records by add comma before next query string.
